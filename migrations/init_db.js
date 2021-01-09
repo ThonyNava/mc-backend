@@ -1,13 +1,5 @@
 const fs = require("fs");
-const { Pool } = require("pg");
-
-const pool = new Pool({
-  user: "",
-  host: "localhost",
-  database: "migracode",
-  password: "",
-  port: 5432,
-});
+const pool = require("../db.js");
 
 pool
   .query(fs.readFileSync("migrations/0_initial_snapshot.sql").toString())
