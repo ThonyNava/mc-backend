@@ -1,0 +1,30 @@
+{
+  "name": "migracode-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "migrate": "node migrations/init_db.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thony Nava",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pg": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThonyNava/mc-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ThonyNava/mc-backend/issues"
+  },
+  "homepage": "https://github.com/ThonyNava/mc-backend.git#readme",
+  "description": ""
+}
